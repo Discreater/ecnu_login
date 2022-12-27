@@ -1,0 +1,12 @@
+[Unit]                             
+Description=Run ecnu network login every 30 minute and on boot
+                                   
+[Timer]                            
+OnBootSec=5min                     
+OnCalendar=*-*-* *:00:00           
+OnCalendar=*-*-* *:30:00
+Unit=ecnu_login.service
+
+[Install]
+WantedBy=multi-user.target
+
