@@ -1,5 +1,7 @@
 # ECNU network login script
 
+systemd 定时任务方案
+
 1. clone或下载所有文件。
 2. 修改 `ecnu_login.sh` 文件
    - username 后的 xxx 改为学号
