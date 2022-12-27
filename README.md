@@ -1,4 +1,4 @@
-# ECNU network login script
+# ECNU 校园网定时自动登录
 
 systemd 定时任务方案
 
