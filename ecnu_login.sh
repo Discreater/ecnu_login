@@ -2,7 +2,7 @@
 login() {
         username=xxxxx
 	password='xxxxxx'
-        curl -X POST https://login.ecnu.edu.cn/include/auth_action.php -H "Content-Type: application/x-www-form-urlencoded" -d "action=login&username=$username&password=$password&ac_id=1&save_me=0&ajax=1" --ciphers 'DEFAULT:!DH'
+        curl -X POST http://login.ecnu.edu.cn/include/auth_action.php -H "Content-Type: application/x-www-form-urlencoded" -d "action=login&username=$username&password=$password&ac_id=1&save_me=0&ajax=1" --ciphers 'DEFAULT:!DH'
 }
 
 ping -c 1 www.bilibili.com > /dev/null 2>&1
