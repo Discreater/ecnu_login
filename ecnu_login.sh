@@ -1,13 +1,13 @@
 #!/bin/sh
 login() {
-        username=xxxxx
+	username=xxxxx
 	password='xxxxxx'
-        curl -X POST http://login.ecnu.edu.cn/include/auth_action.php -H "Content-Type: application/x-www-form-urlencoded" -d "action=login&username=$username&password=$password&ac_id=1&save_me=0&ajax=1" --ciphers 'DEFAULT:!DH'
+	deno run --allow-net --allow-sys ./main.ts $username $password
 }
 
 ping -c 1 www.bilibili.com > /dev/null 2>&1
 if [ $? -eq 0 ];then
-	echo "Network ok"
+	echo "Already connected to the Internet."
 else
 	login
 fi

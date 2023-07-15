@@ -3,7 +3,7 @@ Description=login into ecnu network
 
 [Service]
 Type=oneshot
-ExecStart=/home/xxx/ecnu_login.sh
+ExecStart=/home/path/to/ecnu_login/ecnu_login.sh
 User=alkaid
 StandardOutput=journal
 StandardError=inherit
