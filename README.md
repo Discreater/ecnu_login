@@ -61,6 +61,7 @@ systemd 定时任务方案，需要**保存公共数据库密码**，建议仅�
 2. 修改 `ecnu_login.sh` 文件
    - username 后的 xxx 改为学号
    - password 后的 xxx 改为你的密码
+   - deno 路径修改为你的 deno 的路径, 可通过 `which deno` 查看
 3. 修改 `ecnu_login.service`
    - ExecStart 后的路径为改为 `ecnu_login.sh` 的路径
    - User 后改为你的 Linux 用户名

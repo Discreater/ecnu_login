@@ -2,7 +2,7 @@
 login() {
 	username=xxxxx
 	password='xxxxxx'
-	deno run --allow-net --allow-sys ./main.ts $username $password
+	/home/path/to/deno run --allow-net --allow-sys ./main.ts $username $password
 }
 
 ping -c 1 www.bilibili.com > /dev/null 2>&1
