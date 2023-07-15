@@ -1,10 +1,11 @@
 [Unit]                             
-Description=Run ecnu network login every 30 minute and on boot
+Description=Run ecnu network login every 20 minute and on boot
                                    
 [Timer]                            
 OnBootSec=5min                     
 OnCalendar=*-*-* *:00:00           
-OnCalendar=*-*-* *:30:00
+OnCalendar=*-*-* *:20:00
+OnCalendar=*-*-* *:40:00
 Unit=ecnu_login.service
 
 [Install]
