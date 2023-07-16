@@ -63,7 +63,7 @@ systemd 定时任务方案，需要**保存公共数据库密码**，建议仅�
    - password 后的 xxx 改为你的密码
    - deno 路径修改为你的 deno 的路径, 可通过 `which deno` 查看
 3. 修改 `ecnu_login.service`
-   - ExecStart 后的路径为改为 `ecnu_login.sh` 的路径
+   - WorkingDirectory 后的路径为改为本仓库的目录
    - User 后改为你的 Linux 用户名
 4. 复制 `ecnu_login.service` 和 `ecnu_login.timer` 到 `/etc/systemd/system/`
    目录下 (sudo 权限)
