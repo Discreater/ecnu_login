@@ -1,0 +1,11 @@
+[Unit]
+Description=login into ecnu network
+
+[Service]
+Type=oneshot
+WorkingDirectory=${wd}
+ExecStart=sh ./ecnu_login.sh
+User=${USER}
+StandardOutput=journal
+StandardError=inherit
+Group=systemd-journal
