@@ -3,7 +3,7 @@ Description=login into ecnu network
 
 [Service]
 Type=oneshot
-WorkingDirectory=${wd}
+WorkingDirectory=$PWD
 ExecStart=sh ./ecnu_login.sh
 User=${USER}
 StandardOutput=journal
