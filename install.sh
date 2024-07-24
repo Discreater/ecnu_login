@@ -33,7 +33,7 @@ echo "ACCOUNT=$account" >> .env
 echo "PASSWORD=$password" >> .env
 
 cp ecnu_login.service.template ecnu_login.service
-envsubst < ecnu_login.service.template > ecnu_login.service
+wd=$wd envsubst < ecnu_login.service.template > ecnu_login.service
 
 sudo cp ./ecnu_login.service /etc/systemd/system/
 sudo cp ./ecnu_login.timer /etc/systemd/system/
