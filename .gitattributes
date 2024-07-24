@@ -1,0 +1,3 @@
+*.sh text eol=lf
+*.template text eol=lf
+*.timer text eol=lf
